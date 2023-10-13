@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "StableDiffusion图片参数提取",
+  "name": "StableDiffusion图片参数提取",
   "icons": [
     {
       "src": "favicon.ico",

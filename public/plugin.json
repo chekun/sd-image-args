@@ -1,0 +1,33 @@
+{
+	"main": "index.html",
+	"preload": "preload.js",
+	"logo": "logo192.png",
+	"features": [
+		{
+		  "code": "StableDiffusion图片参数提取",
+		  "explain": "提取StableDiffusion生成图片的参数信息",
+			"cmds":[
+				"SD图片参数提取",
+				"sd-image-args",
+				{
+					"type": "img",
+					"label": "SD图片参数提取"
+				},
+				{
+					"type": "regex",
+					"label": "SD图片参数提取",
+					"match": "/^(https?:\\/\\/|www\\.)[^\\s/$.?#].[^\\s]*$/i",
+					"minLength": 10
+				},
+				{
+					"type": "files",
+					"label": "SD图片参数提取",
+					"fileType": "file",
+					"match": "/(png|jpg|jpeg)$/",
+        	"minLength": 1,
+        	"maxLength": 1
+				}
+			]
+		}
+	]
+}
