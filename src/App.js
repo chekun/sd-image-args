@@ -73,13 +73,22 @@ function App() {
           setIsSuccess(true)
           return
         }
-      } else {
-        const metadata = jpgExifReader(window.getJpegExifBuffer(imageBuffer))
+      } else if (fileType === 'jpg') {
+        let metadata
+        try {
+          metadata = jpgExifReader(window.getJpegExifBuffer(imageBuffer))
+        } catch (e) {
+          setResult('无法读取图片Exif数据')
+          return
+        }
         if (metadata && metadata.Photo && metadata.Photo.UserComment) {
           setResult(metadata.Photo.UserComment.toString().replace('UNICODE', '').replaceAll('\x00', ''))
           setIsSuccess(true)
           return
         }
+      } else {
+        setResult('仅支持png和jpg格式的图片')
+        return
       }
       setResult('图片中未能找到生成参数信息')
     })()
