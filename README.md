@@ -10,3 +10,13 @@
 视频展示
 
 [https://www.bilibili.com/video/BV1Uw411r73g/](https://www.bilibili.com/video/BV1Uw411r73g/)
+
+安装方式
+
+- 插件市场
+  
+  >审核中
+
+- 离线安装
+
+  访问 [https://github.com/chekun/sd-image-args/releases](https://github.com/chekun/sd-image-args/releases)，下载upx文件手动安装
