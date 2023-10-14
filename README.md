@@ -1,5 +1,7 @@
 # StableDiffusion图片参数提取utools插件
 
+![1697002501622](https://github.com/chekun/sd-image-args/assets/1967804/b00d2956-2609-43d9-9a3c-0dda7ebc138b)
+
 支持三种操作方式
   1. 直接进入插件，通过选择文件进行参数提取
   2. 在文件浏览器中，复制图片文件后，唤醒utools快速进入插件提取
